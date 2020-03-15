@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>View From My Window</title>
+
+	<style>
+		img{visibility: hidden;}
+	</style>
+
+	<script src = "script.js" type="text/javascript">
+	</script>
+
+</head>
+
+<body onLoad="init();">
+	<canvas id = "canvas" width = "1000" height = "1000">
+		Your browser doesn't support the HTML5 canvas.
+	</canvas>
+	<br/>
+	<!-- <form name="f" id="f" onSubmit="return change();">
+		Horizontal velocity <input name="hv" id="hv" value="4" type="number" min="-10" max="10"/>
+		<br/>
+		Vertical velocity <input name="vv" id="vv" value="8" type="number" min="-10" max="10"/>
+		<input type="submit" value="CHANGE"/>
+		</form> -->
+		<button onClick="return stopcc();">STOP </button>
+		&nbsp; &nbsp;
+		<button onClick="return resume();">RESUME </button>
+	<img src="tramtest.png"/>
+	<img src="tramtest2.png"/>
+	<img src="background1.jpg"/>
+	<!-- <img src="background2.jpg"/> -->
+</body>
+</html>
