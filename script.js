@@ -2,23 +2,23 @@ var stoppedx = ballvx;
 		var stoppedy = ballvy;
 		var stoppedx2 = ballvx2;
 		var stoppedy2 = ballvy2;
-		var boxx = 450; // x coordinate for upper left corner of box
+		var boxx = 0; // x coordinate for upper left corner of box
 		var boxy = 0; // y coordinate for upper left corner of box
-		var boxwidth = 500; 
-		var boxheight = 675;
-		var ballrad = 20;
+		var boxwidth = 550; 
+		var boxheight = 700;
+		var ballrad = 30;
 		var boxboundx = boxwidth+boxx-ballrad; // right boundary
 		var boxboundy = boxheight+boxy-2*ballrad; // bottom boundary
 		var inboxboundx = boxx+ballrad; // left boundary
 		var inboxboundy = boxy+2*ballrad; // top boundary
 		var ballx = inboxboundx; // initial x position of ball
-		var bally = 400; // initial y position of ball
+		var bally = 415; // initial y position of ball
 		var ballvx = 2.5; // horizontal displacement
-		var ballvy = -0.84; // vertical displacement
+		var ballvy = -0.80; // vertical displacement
 		var ballx2 = boxboundx; // initial x position of ball2
-		var bally2 = 240; // initial y position of ball
+		var bally2 = 265; // initial y position of ball
 		var ballvx2 = -2.5; // horizontal displacement
-		var ballvy2 = 0.84; // vertical displacement
+		var ballvy2 = 0.80; // vertical displacement
 		var ball = new Image();
 		var ball2 = new Image();
 		var bkg = new Image();
@@ -85,7 +85,7 @@ var stoppedx = ballvx;
 		}
 		function sendBack1() {
 			nballx = inboxboundx-2; // If so, send ball back to left wall
-			nbally = 400; // And back to original y position
+			nbally = 415; // And back to original y position
 			ballx = nballx;
 			bally = nbally;
 			}
@@ -104,7 +104,7 @@ var stoppedx = ballvx;
 
 		function sendBack2() {
 			nballx2 = boxboundx+2; // If so, send ball back to left wall
-			nbally2 = 240; // And back to original y position
+			nbally2 = 265; // And back to original y position
 			ballx2 = nballx2;
 			bally2 = nbally2;
 		}
