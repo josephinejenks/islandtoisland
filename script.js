@@ -37,7 +37,7 @@ var ctx;
 		function init() {
 			ball.src = "tramtest.png";
 			ball2.src = "tramtest2.png";
-			bkg.src = "background1.jpg";
+			bkg.src = "background2.jpg";
 			// var h;
 			ctx = document.getElementById('canvas').getContext('2d');
 			ctx.fillStyle = "white";
@@ -55,11 +55,11 @@ var ctx;
 		}
 
 		function changeImage() {
-			if (bkg.src.match("background2.jpg")) {
-				bkg.src = "background1.jpg";
+			if (bkg.src.match("background1.jpg")) {
+				bkg.src = "background2.jpg";
 			}
 			else {
-				bkg.src="background2.jpg";
+				bkg.src="background1.jpg";
 			}
 			ctx.drawImage(bkg,boxx+2*ballrad,boxy+2*ballrad,boxwidth-4*ballrad,boxheight-4*ballrad);
 		}
